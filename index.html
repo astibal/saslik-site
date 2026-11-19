@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131818">
+  <meta name="description" content="Saslik brings network traffic tools into one workspace. An early preview for early bird supporters is coming soon.">
+  <title>Saslik — A clearer view of your network</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #131818; color: #f2f1e9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .page { max-width: 1240px; margin: auto; padding: 36px 6vw 24px; }
+    header, footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-size: 30px; font-weight: 750; letter-spacing: -1.5px; }
+    .brand span { color: #c4ed89; }
+    .label { font: 14px/1.5 ui-monospace, monospace; color: #b2bcb8; }
+    main { padding: 100px 0 72px; }
+    .hero { display: grid; grid-template-columns: 1.5fr 1fr; align-items: center; gap: 48px; }
+    .eyebrow { color: #c4ed89; font: 14px/1.5 ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 24px 0; font-size: clamp(44px, 6.7vw, 80px); line-height: 1.04; letter-spacing: -.055em; font-weight: 600; }
+    .intro { max-width: 560px; color: #b2bcb8; font-size: 19px; line-height: 1.7; }
+    .art { width: 100%; max-width: 360px; justify-self: end; }
+    .preview { margin-top: 80px; padding-top: 32px; border-top: 1px solid #3b4541; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    h2 { margin: 0 0 12px; font-size: 24px; font-weight: 550; letter-spacing: -.03em; }
+    p { margin: 0; }
+    .preview p { max-width: 470px; color: #b2bcb8; font-size: 17px; line-height: 1.7; }
+    .contact { align-self: center; }
+    .contact a { display: inline-block; margin-top: 12px; color: #c4ed89; font-size: clamp(21px, 3vw, 30px); text-decoration-thickness: 1px; text-underline-offset: 7px; overflow-wrap: anywhere; }
+    a:hover { color: #f2f1e9; }
+    a:focus-visible { outline: 2px solid #c4ed89; outline-offset: 8px; }
+    footer { border-top: 1px solid #3b4541; padding-top: 24px; font-size: 14px; color: #b2bcb8; }
+    @media (max-width: 700px) {
+      .page { padding: 24px; }
+      main { padding: 64px 0 48px; }
+      .hero { grid-template-columns: 1fr; gap: 28px; }
+      .art { width: 180px; justify-self: center; }
+      .preview { margin-top: 40px; grid-template-columns: 1fr; gap: 28px; }
+      footer { align-items: start; flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">saslik<span>.</span></div>
+      <span class="label">In the making</span>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="headline">
+        <div>
+          <p class="eyebrow">One workspace. More perspective.</p>
+          <h1 id="headline">A clearer view<br>of your network.</h1>
+          <p class="intro">Saslik brings tools for capturing, inspecting and exploring network traffic into one workspace. We're building a simpler way to connect the pieces and understand what's happening on the wire.</p>
+        </div>
+        <svg class="art" viewBox="0 0 360 360" fill="none" aria-hidden="true">
+          <circle cx="180" cy="180" r="154" stroke="#34413b"/>
+          <circle cx="180" cy="180" r="112" stroke="#34413b" stroke-dasharray="3 9"/>
+          <path d="M75 285 285 75" stroke="#c4ed89" stroke-width="3"/>
+          <rect x="103" y="193" width="64" height="64" rx="14" transform="rotate(-45 135 225)" fill="#27392d" stroke="#c4ed89" stroke-width="2"/>
+          <rect x="148" y="148" width="64" height="64" rx="14" transform="rotate(-45 180 180)" fill="#c4ed89"/>
+          <rect x="193" y="103" width="64" height="64" rx="14" transform="rotate(-45 225 135)" fill="#27392d" stroke="#c4ed89" stroke-width="2"/>
+          <path d="M28 180h16m272 0h16M180 28v16m0 272v16" stroke="#7b8b80"/>
+        </svg>
+      </section>
+      <section class="preview" aria-labelledby="preview-heading">
+        <div>
+          <h2 id="preview-heading">A first taste. Coming soon.</h2>
+          <p>We'll soon open an early preview for early bird supporters. Help shape what comes next, from the very beginning.</p>
+        </div>
+        <div class="contact">
+          <p>Interested in the preview? Get in touch.</p>
+          <a href="mailto:contact@saslik.io">contact@saslik.io</a>
+        </div>
+      </section>
+    </main>
+    <footer><span>Saslik · Network tools, brought together.</span><span>Built with curiosity.</span></footer>
+  </div>
+</body>
+</html>
