@@ -40,8 +40,6 @@
       footer { align-items: start; flex-direction: column; gap: 8px; }
     }
   </style>
-  <link rel="stylesheet" href="tour.css">
-  <script src="tour.js" defer></script>
 </head>
 <body>
   <div class="page">
@@ -65,56 +63,6 @@
           <rect x="193" y="103" width="64" height="64" rx="14" transform="rotate(-45 225 135)" fill="#493025" stroke="#ff6b35" stroke-width="2"/>
           <path d="M28 180h16m272 0h16M180 28v16m0 272v16" stroke="#6b818c"/>
         </svg>
-      </section>
-      <section class="tour" aria-labelledby="tour-heading" aria-roledescription="carousel">
-        <div class="tour-heading">
-          <p class="eyebrow">A look inside</p>
-          <h2 id="tour-heading">From the big picture to the bytes.</h2>
-          <p>We're bringing live visibility, traffic inspection and capture analysis into one environment. Here's a first look at the tools taking shape.</p>
-        </div>
-        <div class="tour-controls" aria-label="Slideshow controls">
-          <button type="button" data-slide="0" aria-pressed="false" aria-controls="tour-slide-0">Workspace</button>
-          <button type="button" data-slide="1" aria-pressed="false" aria-controls="tour-slide-1">Live traffic</button>
-          <button type="button" data-slide="2" aria-pressed="false" aria-controls="tour-slide-2">Inspection</button>
-          <button type="button" data-slide="3" aria-pressed="false" aria-controls="tour-slide-3">Content</button>
-          <button type="button" data-slide="4" aria-pressed="false" aria-controls="tour-slide-4">Captures</button>
-          <button type="button" data-play>Pause slideshow</button>
-          <button type="button" data-prev aria-label="Previous slide">Previous</button>
-          <button type="button" data-next aria-label="Next slide">Next</button>
-        </div>
-        <figure class="slide" id="tour-slide-0" aria-roledescription="slide" aria-label="1 of 5">
-          <div class="slide-stage">
-            <img src="assets/workspace.webp" alt="An early workspace interface with its integrated traffic console." loading="lazy">
-          </div>
-          <figcaption><h3>Your traffic lab, in one place.</h3><p>Bring your workspace and traffic tools together. Move from an overview to the details without losing the context.</p><a class="full-image" href="assets/workspace.webp" target="_blank" rel="noopener">Open full-size screenshot</a></figcaption>
-        </figure>
-        <figure class="slide" id="tour-slide-1" aria-roledescription="slide" aria-label="2 of 5">
-          <div class="slide-stage terminal-stage">
-            <img src="assets/live-traffic.webp" alt="A recorded terminal session showing YouTube traffic and transfer statistics." loading="lazy">
-            <img src="assets/connections.webp" alt="Another recorded session with HTTP/2 and QUIC connection details." loading="lazy">
-          </div>
-          <figcaption><h3>See the transfer behind the video.</h3><p>A recorded YouTube session shows download activity, connection details and the protocols carrying the traffic. See more than a destination and a port.</p><a class="full-image" href="assets/live-traffic.webp" target="_blank" rel="noopener">Open full-size screenshot</a> · <a class="full-image" href="assets/connections.webp" target="_blank" rel="noopener">Connection details</a></figcaption>
-        </figure>
-        <figure class="slide" id="tour-slide-2" aria-roledescription="slide" aria-label="3 of 5">
-          <div class="slide-stage">
-            <img src="assets/inspection.webp" alt="A connection event expanded into structured metadata." loading="lazy">
-          </div>
-          <figcaption><h3>Follow the conversation.</h3><p>Explore connection events and structured metadata. Trace how a session begins, which transport it uses and how its pieces fit together.</p><a class="full-image" href="assets/inspection.webp" target="_blank" rel="noopener">Open full-size screenshot</a></figcaption>
-        </figure>
-        <figure class="slide" id="tour-slide-3" aria-roledescription="slide" aria-label="4 of 5">
-          <div class="slide-stage">
-            <img src="assets/stream.webp" alt="A captured stream with readable HTML content and timing information." loading="lazy">
-          </div>
-          <figcaption><h3>From packets to readable content.</h3><p>Follow a stream beyond individual packets. Look at the exchanged content alongside its direction and timing, including decoded web traffic.</p><a class="full-image" href="assets/stream.webp" target="_blank" rel="noopener">Open full-size screenshot</a></figcaption>
-        </figure>
-        <figure class="slide" id="tour-slide-4" aria-roledescription="slide" aria-label="5 of 5">
-          <div class="slide-stage">
-            <img src="assets/packets.webp" alt="A packet viewer with captured traffic, protocol labels and a display filter." loading="lazy">
-          </div>
-          <figcaption><h3>Keep the evidence. Explore it later.</h3><p>Browse captured packets, filter the noise and follow the connections that matter. Keep a detailed view of the traffic for a closer look.</p><a class="full-image" href="assets/packets.webp" target="_blank" rel="noopener">Open full-size screenshot</a></figcaption>
-        </figure>
-        <p class="tour-note">Early development screenshots from separate recorded sessions. Identifying details are obscured; interfaces will evolve.</p>
-        <p class="sr-only" data-status aria-live="polite" aria-atomic="true"></p>
       </section>
       <section class="preview" aria-labelledby="preview-heading">
         <div>
